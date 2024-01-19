@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NegativeLoginTestsSuite" parallel="tests" thread-count="4">
+
+	<test name="TestUsername-chrome">
+		<parameter name="username" value="Invalidtomsmith"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedErrorMsg"
+			value="Your username is invalid!"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.LogInPageTests.NegativeLoginTests" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TestUsername-firefox">
+		<parameter name="username" value="Invalidtomsmith"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedErrorMsg"
+			value="Your username is invalid!"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.LogInPageTests.NegativeLoginTests" />
+		</classes>
+	</test> <!-- Test -->
+
+<test name="TestPassword-chrome">
+		<parameter name="username" value="tomsmith"></parameter>
+		<parameter name="password" value="InvalidSuperSecretPassword!"></parameter>
+		<parameter name="expectedErrorMsg"
+			value="Your password is invalid!"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.LogInPageTests.NegativeLoginTests" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TestPassword-firefox">
+		<parameter name="username" value="tomsmith"></parameter>
+		<parameter name="password" value="InvalidSuperSecretPassword!"></parameter>
+		<parameter name="expectedErrorMsg"
+			value="Your password is invalid!"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.LogInPageTests.NegativeLoginTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

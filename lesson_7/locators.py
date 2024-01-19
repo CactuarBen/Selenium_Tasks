@@ -29,12 +29,11 @@ for button in THREE_BUTTONS:
 time.sleep(3)
 
 #NavBar
+NAVBAR = ('xpath', '//nav')
+NAV_ELEMENTS = ('xpath', '//nav//li')
+NAV_BUTTONS_RIGHT = ('xpath', '//div//button')
+
 
 #Body
-ALL_TRACKS_TAB = ("xpath", "//button[@id='xxx']")
-
-#Name
-
-#Tracks
-
-#Squares
+ALL_TRACKS_TAB = ("xpath", "//div[contains(@class, 'categories')]//a")
+ALL_COURSES_CARDS = ('xpath', '//div[contains(@class, "card")]//div[@class="card-body"]')

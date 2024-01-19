@@ -1,0 +1,50 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+class Util:
+    driver = None
+    def init(self):
+        Util.driver = driver = webdriver.Chrome()
+        Util.driver.maximize_window()
+        Util.driver.implicitly_wait(10)
+
+    def navigateTo(self, url):
+        Util.driver.get(url)
+
+    def getTitle(self):
+        return Util.driver.title
+
+    def getElement(self, type, id):
+        return Util.driver.find_element(type, id)
+    
+    def clickElement(self, type, id):
+        Util.getElement(self, type, id).click()
+
+    def getAttribute(self, type, id, attribute):
+        if (attribute == "Displayed"):
+            return Util.getElement(self, type, id).is_displayed()
+        elif (attribute == "Selected"):
+            return Util.getElement(self, type, id).is_selected()
+        elif (attribute == "Text"):
+            return Util.getElement(self, type, id).text
+        else:
+            return Util.getElement(self, type, id).get_attribute(attribute)
+        
+    def sendKeys(self, type, id, key):
+        Util.getElement(self, type, id).send_keys(key)
+
+p1 = Util()
+p1.init()
+p1.navigateTo("http://the-internet.herokuapp.com/")
+print("title is "+ p1.getTitle())
+p1.clickElement(By.LINK_TEXT, "Checkboxes")
+print(p1.getAttribute(By.XPATH, "//h3[text()='Checkboxes']", "Text"))
+print(p1.getAttribute(By.XPATH, "//input[@type='checkbox'][1]", "Selected"))
+print(p1.getAttribute(By.XPATH, "//input[@type='checkbox'][2]", "Selected"))
+p1.driver.back()
+p1.clickElement(By.LINK_TEXT, "File Upload")
+print(p1.getAttribute(By.XPATH, "//h3[text()='File Uploader']", "Text"))
+p1.sendKeys(By.ID, "file-upload", __file__)
+p1.clickElement(By.ID, "file-submit")
+time.sleep(5)

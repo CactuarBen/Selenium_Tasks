@@ -1,0 +1,2250 @@
+{
+    "skillflow": [
+        [
+            {
+                "skip": false,
+                "title": "Get current pose",
+                "inputParameters": [],
+                "outputParameters": [
+                    {
+                        "displayTitle": "Pose",
+                        "description": null,
+                        "type": "group",
+                        "dataType": "pose",
+                        "availableOptions": [],
+                        "constraints": [],
+                        "title": "pose",
+                        "paramId": "a5a6b11b-ac15-473f-90b3-6f41f04a7853",
+                        "parameters": [
+                            {
+                                "displayTitle": "Position",
+                                "description": null,
+                                "type": "group",
+                                "dataType": "position",
+                                "availableOptions": [],
+                                "constraints": [],
+                                "title": "position",
+                                "paramId": "dc7d32e6-569d-4c0b-a677-7d10153d341d",
+                                "parameters": [
+                                    {
+                                        "displayTitle": "x",
+                                        "description": null,
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "m",
+                                        "title": "x",
+                                        "paramId": "85114dca-825c-48c7-ba68-27187ce390f5",
+                                        "value": null,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "displayTitle": "y",
+                                        "description": null,
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "m",
+                                        "title": "y",
+                                        "paramId": "cc04a450-21d5-4a3c-bb21-22a1f32adb40",
+                                        "value": null,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "displayTitle": "z",
+                                        "description": null,
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "m",
+                                        "title": "z",
+                                        "paramId": "db85dd07-b0c5-4f4e-876a-fa239f1e2a97",
+                                        "value": null,
+                                        "parameters": []
+                                    }
+                                ]
+                            },
+                            {
+                                "displayTitle": "Orientation",
+                                "description": "Rotation around axes in order ZYX",
+                                "type": "group",
+                                "dataType": "orientation",
+                                "availableOptions": [],
+                                "constraints": [],
+                                "translations": [
+                                    {
+                                        "language": "de",
+                                        "values": [
+                                            {
+                                                "key": "Orientation",
+                                                "translation": "Orientierung"
+                                            },
+                                            {
+                                                "key": "Rotation around axes in order ZYX",
+                                                "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "title": "orientation",
+                                "paramId": "33d56437-7317-4dc4-a736-cdd6fa95d77d",
+                                "parameters": [
+                                    {
+                                        "displayTitle": "z",
+                                        "description": "Rotation around Z",
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "rad",
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Rotation around Z",
+                                                        "translation": "Rotation um die Z-Achse"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "z",
+                                        "paramId": "7086a614-6f77-4f01-b0f6-42b0211a0715",
+                                        "value": null,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "displayTitle": "y",
+                                        "description": "Rotation around Y",
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "rad",
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Rotation around Y",
+                                                        "translation": "Rotation um die Y-Achse"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "y",
+                                        "paramId": "1cccec99-ee97-424c-8fd6-7c955fbcaa80",
+                                        "value": null,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "displayTitle": "x",
+                                        "description": "Rotation around X",
+                                        "type": "primitive",
+                                        "dataType": "float",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "unit": "rad",
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Rotation around X",
+                                                        "translation": "Rotation um die X-Achse"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "x",
+                                        "paramId": "685dab16-8793-4c70-9ae4-1f3c1a79a906",
+                                        "value": null,
+                                        "parameters": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "globalParameters": [],
+                "type": "Reference",
+                "reference": "a9ef9968-dbfb-4b71-ab9f-40f29d2aca77",
+                "errorflows": []
+            },
+            {
+                "skip": false,
+                "title": "Move Z",
+                "inputParameters": [
+                    {
+                        "displayTitle": "Trajectory",
+                        "description": "List of waypoints the robot will move to.",
+                        "type": "list",
+                        "dataType": "trajectory",
+                        "availableOptions": [],
+                        "constraints": [],
+                        "translations": [
+                            {
+                                "language": "de",
+                                "values": [
+                                    {
+                                        "key": "Trajectory",
+                                        "translation": "Trajektorie"
+                                    },
+                                    {
+                                        "key": "List of waypoints the robot will move to.",
+                                        "translation": "Liste der anzufahrenden Wegpunkte."
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": "trajectory",
+                        "paramId": "39a7206c-7ef4-4d5e-81a1-238728eb8392",
+                        "value": null,
+                        "reference": null,
+                        "parameters": [
+                            {
+                                "displayTitle": "Waypoint",
+                                "description": null,
+                                "type": "group",
+                                "dataType": "waypoint_2",
+                                "availableOptions": [],
+                                "constraints": [],
+                                "translations": [
+                                    {
+                                        "language": "de",
+                                        "values": [
+                                            {
+                                                "key": "Waypoint",
+                                                "translation": "Wegpunkt"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "title": "new_param",
+                                "paramId": "031cfd55-77f7-449b-b531-52ca17808e7a",
+                                "value": null,
+                                "reference": null,
+                                "parameters": [
+                                    {
+                                        "displayTitle": "Pose",
+                                        "description": null,
+                                        "type": "group",
+                                        "dataType": "pose",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Pose",
+                                                        "translation": "Pose"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "pose",
+                                        "paramId": "6d52c806-8d10-4680-b2dd-f38cb2ac8acd",
+                                        "value": null,
+                                        "reference": null,
+                                        "parameters": [
+                                            {
+                                                "displayTitle": "Position",
+                                                "description": null,
+                                                "type": "group",
+                                                "dataType": "position",
+                                                "availableOptions": [],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Position",
+                                                                "translation": "Position"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "position",
+                                                "paramId": "6f5e6082-13e7-4d0b-9643-952f8c7b0d74",
+                                                "value": null,
+                                                "reference": null,
+                                                "parameters": [
+                                                    {
+                                                        "displayTitle": "X",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "x",
+                                                        "paramId": "040763d5-e78a-4f29-a056-cfae668c1fd0",
+                                                        "value": "0",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Y",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "y",
+                                                        "paramId": "154f55bb-8e26-4776-9c45-f405640ea3c1",
+                                                        "value": "0",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Z",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "z",
+                                                        "paramId": "53d19495-accb-4c64-a179-c62e68a86282",
+                                                        "value": "0.00002",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "displayTitle": "Orientation",
+                                                "description": "Rotation around axes in order ZYX",
+                                                "type": "group",
+                                                "dataType": "orientation",
+                                                "availableOptions": [],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Orientation",
+                                                                "translation": "Orientierung"
+                                                            },
+                                                            {
+                                                                "key": "Rotation around axes in order ZYX",
+                                                                "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "orientation",
+                                                "paramId": "a8472d2d-b711-4942-9c24-730784be4413",
+                                                "value": null,
+                                                "reference": null,
+                                                "parameters": [
+                                                    {
+                                                        "displayTitle": "Z",
+                                                        "description": "Rotation around Z",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around Z",
+                                                                        "translation": "Rotation um die Z-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "z",
+                                                        "paramId": "0cd48e86-5147-44ff-b7fa-e09c613e122d",
+                                                        "value": "0",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Y",
+                                                        "description": "Rotation around Y",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around Y",
+                                                                        "translation": "Rotation um die Y-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "y",
+                                                        "paramId": "4cbb7e7d-d824-44e6-b5a1-f57511b5cffd",
+                                                        "value": "0",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "X",
+                                                        "description": "Rotation around X",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around X",
+                                                                        "translation": "Rotation um die X-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "x",
+                                                        "paramId": "91f3b597-820c-4e87-89ab-57d1f94ade38",
+                                                        "value": "0",
+                                                        "reference": null,
+                                                        "parameters": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "displayTitle": "Pose Reference",
+                                        "description": "If set, the waypoint's pose will be relative to this reference pose.",
+                                        "type": "group",
+                                        "dataType": "pose",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Pose Reference",
+                                                        "translation": "Referenzpose"
+                                                    },
+                                                    {
+                                                        "key": "If set, the waypoint's pose will be relative to this reference pose.",
+                                                        "translation": "Wenn gesetzt wird die gegebene Pose relative zur Referenzpose angefahren."
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "pose_reference",
+                                        "paramId": "f7bdf347-b054-4c47-b221-b199f6cb5ddf",
+                                        "value": null,
+                                        "reference": "a5a6b11b-ac15-473f-90b3-6f41f04a7853",
+                                        "parameters": [
+                                            {
+                                                "displayTitle": "Position",
+                                                "description": null,
+                                                "type": "group",
+                                                "dataType": "position",
+                                                "availableOptions": [],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Position",
+                                                                "translation": "Position"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "position",
+                                                "paramId": "4292c303-a57e-4c17-b06e-f2f898b4bc34",
+                                                "value": null,
+                                                "reference": "dc7d32e6-569d-4c0b-a677-7d10153d341d",
+                                                "parameters": [
+                                                    {
+                                                        "displayTitle": "X",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "x",
+                                                        "paramId": "775ff76d-635a-4764-8090-75a96351a3ab",
+                                                        "value": null,
+                                                        "reference": "85114dca-825c-48c7-ba68-27187ce390f5",
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Y",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "y",
+                                                        "paramId": "2729c459-a3e7-4543-b35d-133fccb3cd80",
+                                                        "value": null,
+                                                        "reference": "cc04a450-21d5-4a3c-bb21-22a1f32adb40",
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Z",
+                                                        "description": null,
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "m",
+                                                        "title": "z",
+                                                        "paramId": "7ae653b4-44c8-4d27-b1ee-febd94f5e6ba",
+                                                        "value": null,
+                                                        "reference": "db85dd07-b0c5-4f4e-876a-fa239f1e2a97",
+                                                        "parameters": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "displayTitle": "Orientation",
+                                                "description": "Rotation around axes in order ZYX",
+                                                "type": "group",
+                                                "dataType": "orientation",
+                                                "availableOptions": [],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Orientation",
+                                                                "translation": "Orientierung"
+                                                            },
+                                                            {
+                                                                "key": "Rotation around axes in order ZYX",
+                                                                "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "orientation",
+                                                "paramId": "501a3bd2-78ea-483c-8c39-fe56116e4d85",
+                                                "value": null,
+                                                "reference": "33d56437-7317-4dc4-a736-cdd6fa95d77d",
+                                                "parameters": [
+                                                    {
+                                                        "displayTitle": "Z",
+                                                        "description": "Rotation around Z",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around Z",
+                                                                        "translation": "Rotation um die Z-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "z",
+                                                        "paramId": "4955397a-a73c-499a-a5ed-e8e3e1a38373",
+                                                        "value": null,
+                                                        "reference": "7086a614-6f77-4f01-b0f6-42b0211a0715",
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "Y",
+                                                        "description": "Rotation around Y",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around Y",
+                                                                        "translation": "Rotation um die Y-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "y",
+                                                        "paramId": "83fc24ea-c24a-4487-b822-c5e90df967e6",
+                                                        "value": null,
+                                                        "reference": "1cccec99-ee97-424c-8fd6-7c955fbcaa80",
+                                                        "parameters": []
+                                                    },
+                                                    {
+                                                        "displayTitle": "X",
+                                                        "description": "Rotation around X",
+                                                        "type": "primitive",
+                                                        "dataType": "float",
+                                                        "availableOptions": [],
+                                                        "constraints": [],
+                                                        "unit": "rad",
+                                                        "translations": [
+                                                            {
+                                                                "language": "de",
+                                                                "values": [
+                                                                    {
+                                                                        "key": "Rotation around X",
+                                                                        "translation": "Rotation um die X-Achse"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "title": "x",
+                                                        "paramId": "73b36004-ec27-4b7f-ac56-dc16a8f2cd31",
+                                                        "value": null,
+                                                        "reference": "685dab16-8793-4c70-9ae4-1f3c1a79a906",
+                                                        "parameters": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "displayTitle": "Movement Type",
+                                        "description": "How the robot moves. LIN: In a straight line between waypoints. PTP: Robot choses path between points, not always straight.",
+                                        "type": "select",
+                                        "dataType": "string",
+                                        "availableOptions": [
+                                            "LIN",
+                                            "PTP"
+                                        ],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Movement Type",
+                                                        "translation": "Bewegungsart"
+                                                    },
+                                                    {
+                                                        "key": "How the robot moves. LIN: In a straight line between waypoints. PTP: Robot choses path between points, not always straight.",
+                                                        "translation": "Bestimmt die Bahn des Roboters. LIN: Gerade Linie zwischen Wegpunkten. PTP: Roboter entscheidet über den Bahn zwischen Wegpunkten, nicht immer gerade."
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "movement_type",
+                                        "paramId": "5be5e8f1-9a38-41e6-a51a-49379221ebf4",
+                                        "value": "LIN",
+                                        "reference": null,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "displayTitle": "Speed",
+                                        "description": "Speed of robot movement",
+                                        "type": "unitval",
+                                        "dataType": "speed",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Speed",
+                                                        "translation": "Geschwindigkeit"
+                                                    },
+                                                    {
+                                                        "key": "Speed of robot movement",
+                                                        "translation": "Geschwindigkeit der Roboterbewegung"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "speed",
+                                        "paramId": "6b8de77c-4559-4940-b6d2-6152cd28eceb",
+                                        "value": null,
+                                        "reference": null,
+                                        "parameters": [
+                                            {
+                                                "displayTitle": "Speed Value",
+                                                "description": null,
+                                                "type": "primitive",
+                                                "dataType": "float",
+                                                "availableOptions": [],
+                                                "constraints": [
+                                                    {
+                                                        "msg": "Value should be smaller or equals 100",
+                                                        "rule": "=PERCENT?<=100",
+                                                        "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater than 0",
+                                                        "rule": "=PERCENT?>0",
+                                                        "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater than 0",
+                                                        "rule": "=M/S?>0",
+                                                        "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                        "type": "ref"
+                                                    }
+                                                ],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Speed Value",
+                                                                "translation": "Geschwindigkeit-Wert"
+                                                            },
+                                                            {
+                                                                "key": "Value should be smaller or equals 100",
+                                                                "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                            },
+                                                            {
+                                                                "key": "Value should be greater than 0",
+                                                                "translation": "Wert sollte größer als 0 sein"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "speed_value",
+                                                "paramId": "9e9ec05e-69a9-4ddf-8d60-9a82a983bbeb",
+                                                "value": "0.05",
+                                                "reference": null,
+                                                "parameters": []
+                                            },
+                                            {
+                                                "displayTitle": "Speed Type",
+                                                "description": null,
+                                                "type": "select",
+                                                "dataType": "string",
+                                                "availableOptions": [
+                                                    "M/S",
+                                                    "PERCENT"
+                                                ],
+                                                "constraints": [
+                                                    {
+                                                        "msg": "PTP requires speed in PERCENT",
+                                                        "rule": "=PTP?=PERCENT",
+                                                        "reference": "b78a25e9-e276-528e-158f-ee3fbe87b591",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "LIN requires speed in M/S",
+                                                        "rule": "=LIN?=M/S",
+                                                        "reference": "b78a25e9-e276-528e-158f-ee3fbe87b591",
+                                                        "type": "ref"
+                                                    }
+                                                ],
+                                                "translations": [
+                                                    {
+                                                        "language": "en",
+                                                        "values": [
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Speed Type",
+                                                                "translation": "Geschwindigkeitsart"
+                                                            },
+                                                            {
+                                                                "key": "PTP requires speed in PERCENT",
+                                                                "translation": "PTP benötigt Geschwindigkeit in %"
+                                                            },
+                                                            {
+                                                                "key": "LIN requires speed in M/S",
+                                                                "translation": "LIN benötigt Geschwindigkeit in M/S"
+                                                            },
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "speed_type",
+                                                "paramId": "6f782e4b-4d47-437a-b791-b98c9642d71e",
+                                                "value": "M/S",
+                                                "reference": null,
+                                                "parameters": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "displayTitle": "Acceleration",
+                                        "description": "Acceleration of robot movement",
+                                        "type": "unitval",
+                                        "dataType": "acceleration",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Acceleration",
+                                                        "translation": "Beschleunigung"
+                                                    },
+                                                    {
+                                                        "key": "Acceleration of robot movement",
+                                                        "translation": "Beschleunigung der Roboterbewegung"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "acceleration",
+                                        "paramId": "a7f2906e-b70e-4555-ba0a-61c22a563ccc",
+                                        "value": null,
+                                        "reference": null,
+                                        "parameters": [
+                                            {
+                                                "displayTitle": "Acceleration Value",
+                                                "description": null,
+                                                "type": "primitive",
+                                                "dataType": "float",
+                                                "availableOptions": [],
+                                                "constraints": [
+                                                    {
+                                                        "msg": "Value should be smaller or equals 100",
+                                                        "rule": "=PERCENT?<=100",
+                                                        "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater than 0",
+                                                        "rule": "=PERCENT?>0",
+                                                        "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater than 0",
+                                                        "rule": "=M/S^2?>0",
+                                                        "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                        "type": "ref"
+                                                    }
+                                                ],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Acceleration Value",
+                                                                "translation": "Beschleunigung-Wert"
+                                                            },
+                                                            {
+                                                                "key": "Value should be smaller or equals 100",
+                                                                "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                            },
+                                                            {
+                                                                "key": "Value should be greater than 0",
+                                                                "translation": "Wert sollte größer als 0 sein"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "acceleration_value",
+                                                "paramId": "9b4100ea-5309-4048-9df0-afeb71be38cc",
+                                                "value": "50.0",
+                                                "reference": null,
+                                                "parameters": []
+                                            },
+                                            {
+                                                "displayTitle": "Acceleration Type",
+                                                "description": null,
+                                                "type": "select",
+                                                "dataType": "string",
+                                                "availableOptions": [
+                                                    "PERCENT",
+                                                    "M/S^2"
+                                                ],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "en",
+                                                        "values": [
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Acceleration Type",
+                                                                "translation": "Beschleunigungsart"
+                                                            },
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "acceleration_type",
+                                                "paramId": "24916266-0d21-432f-b263-a83e3fd7e650",
+                                                "value": "PERCENT",
+                                                "reference": null,
+                                                "parameters": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "displayTitle": "Blending",
+                                        "description": "Positional blending between waypoint poses",
+                                        "type": "unitval",
+                                        "dataType": "blending",
+                                        "availableOptions": [],
+                                        "constraints": [],
+                                        "translations": [
+                                            {
+                                                "language": "de",
+                                                "values": [
+                                                    {
+                                                        "key": "Blending",
+                                                        "translation": "Überschleifen"
+                                                    },
+                                                    {
+                                                        "key": "Positional blending between waypoint poses",
+                                                        "translation": "Überschleifen zwischen einzelnen Wegpunkten"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "title": "blending",
+                                        "paramId": "a488e73c-31ca-4542-ae22-1525990be261",
+                                        "value": null,
+                                        "reference": null,
+                                        "parameters": [
+                                            {
+                                                "displayTitle": "Blending Value",
+                                                "description": null,
+                                                "type": "primitive",
+                                                "dataType": "float",
+                                                "availableOptions": [],
+                                                "constraints": [
+                                                    {
+                                                        "msg": "Value should be smaller or equals 100",
+                                                        "rule": "=PERCENT?<=100",
+                                                        "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater or equals 0",
+                                                        "rule": "=PERCENT?>=0",
+                                                        "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                        "type": "ref"
+                                                    },
+                                                    {
+                                                        "msg": "Value should be greater or equals 0",
+                                                        "rule": "=M?>=0",
+                                                        "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                        "type": "ref"
+                                                    }
+                                                ],
+                                                "translations": [
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Blending Value",
+                                                                "translation": "Überschleifen-Wert"
+                                                            },
+                                                            {
+                                                                "key": "Value should be smaller or equals 100",
+                                                                "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                            },
+                                                            {
+                                                                "key": "Value should be greater or equals 0",
+                                                                "translation": "Wert sollte größer oder gleich 0 sein"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "blending_value",
+                                                "paramId": "faa068fd-87e0-479f-9a6d-a02d2e48beee",
+                                                "value": "0.0",
+                                                "reference": null,
+                                                "parameters": []
+                                            },
+                                            {
+                                                "displayTitle": "Blending Type",
+                                                "description": null,
+                                                "type": "select",
+                                                "dataType": "string",
+                                                "availableOptions": [
+                                                    "PERCENT",
+                                                    "M"
+                                                ],
+                                                "constraints": [],
+                                                "translations": [
+                                                    {
+                                                        "language": "en",
+                                                        "values": [
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "language": "de",
+                                                        "values": [
+                                                            {
+                                                                "key": "Blending Type",
+                                                                "translation": "Überschleifen-Art"
+                                                            },
+                                                            {
+                                                                "key": "PERCENT",
+                                                                "translation": "%"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "title": "blending_type",
+                                                "paramId": "2c8e7751-8091-46ac-a576-6a2771022365",
+                                                "value": "PERCENT",
+                                                "reference": null,
+                                                "parameters": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "displayTitle": "Add to Waypoint Queue",
+                        "description": "When enabled the robot does not move when this function block is executed. Movement is suspended and its execution needs to be triggered by the function block 'Wayoint Queue - Move'. This enables chaining movements for shorter cycle times.",
+                        "type": "primitive",
+                        "dataType": "boolean",
+                        "availableOptions": [],
+                        "constraints": [],
+                        "translations": [
+                            {
+                                "language": "de",
+                                "values": [
+                                    {
+                                        "key": "Add to Waypoint Queue",
+                                        "translation": "Zur Wegpunkt-Warteschlange hinzufügen"
+                                    },
+                                    {
+                                        "key": "When enabled the robot does not move when this function block is executed. Movement is suspended and its execution needs to be triggered by the function block 'Wayoint Queue - Move'. This enables chaining movements for shorter cycle times.",
+                                        "translation": "Wenn aktiviert wird die Bewegung des Roboters nicht bei der Ausführung diese Funktionsblockes durchgeführt. Die Bewegung wird ausgesetzt und muss durch den Funktionsblock 'Wegpunkt-Warteschlange - Bewegen' gestartet werden. Das ermöglich die Verkettung mehrerer Bewegungn zur Taktzeitoptimierung."
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": "add_to_waypoint_queue",
+                        "paramId": "8ed59b0d-48fe-44e9-8a1a-19e4782bad94",
+                        "value": "false",
+                        "reference": null,
+                        "parameters": []
+                    }
+                ],
+                "outputParameters": [],
+                "globalParameters": [],
+                "type": "Reference",
+                "reference": "06ae75fc-626f-454c-811d-d910d5a308e4",
+                "errorflows": []
+            }
+        ]
+    ],
+    "version": "1.0.0-pre.4",
+    "errorcodes": [],
+    "skip": false,
+    "type": "Program",
+    "title": "E2E test program",
+    "description": null,
+    "image": "dnb-icon-general_skill",
+    "dependencies": [
+        {
+            "version": "1.x",
+            "internalId": "a9ef9968-dbfb-4b71-ab9f-40f29d2aca77",
+            "identifier": "5bade47d2e1fa89c5de6848c",
+            "title": "Get TCP Pose"
+        },
+        {
+            "version": "5.x",
+            "internalId": "06ae75fc-626f-454c-811d-d910d5a308e4",
+            "identifier": "5a8ec43a2e41150001bd047a",
+            "title": "Move Cartesian"
+        }
+    ],
+    "identifier": "560a4e00-92d2-4c7a-80ac-d66144440bc8",
+    "inputParameters": [],
+    "outputParameters": [],
+    "globalParameters": [],
+    "tcp": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "alpha": 0,
+        "beta": 0,
+        "gamma": 0
+    },
+    "models": [
+        {
+            "version": "1.4.0",
+            "errorcodes": [],
+            "skip": false,
+            "type": "Basic",
+            "inputParameters": [],
+            "globalParameters": [],
+            "outputParameters": [
+                {
+                    "availableOptions": [],
+                    "parameters": [
+                        {
+                            "availableOptions": [],
+                            "parameters": [
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "paramId": "a41bb16c-6020-862e-571a-e86fe105a213",
+                                    "title": "x",
+                                    "description": null,
+                                    "value": null,
+                                    "type": "primitive",
+                                    "dataType": "float",
+                                    "reference": null,
+                                    "displayTitle": "x",
+                                    "unit": "m"
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "paramId": "4afa02d9-f62a-bbf5-ad2f-6b94b4e192a7",
+                                    "title": "y",
+                                    "description": null,
+                                    "value": null,
+                                    "type": "primitive",
+                                    "dataType": "float",
+                                    "reference": null,
+                                    "displayTitle": "y",
+                                    "unit": "m"
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "reference": null,
+                                    "dataType": "float",
+                                    "type": "primitive",
+                                    "value": null,
+                                    "description": null,
+                                    "title": "z",
+                                    "paramId": "305bab83-8af6-8035-1e5b-c4a4b0ed16c3",
+                                    "displayTitle": "z",
+                                    "unit": "m"
+                                }
+                            ],
+                            "constraints": [],
+                            "reference": null,
+                            "dataType": "position",
+                            "type": "group",
+                            "value": null,
+                            "description": null,
+                            "title": "position",
+                            "paramId": "03fe2b9b-902b-c666-7af6-242812378f67",
+                            "displayTitle": "Position"
+                        },
+                        {
+                            "availableOptions": [],
+                            "parameters": [
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "reference": null,
+                                    "dataType": "float",
+                                    "type": "primitive",
+                                    "value": null,
+                                    "description": "Rotation around Z",
+                                    "title": "z",
+                                    "paramId": "45edc5f2-e0c2-f825-d1d3-60b103279f76",
+                                    "displayTitle": "z",
+                                    "unit": "rad",
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Rotation around Z",
+                                                    "translation": "Rotation um die Z-Achse"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "reference": null,
+                                    "dataType": "float",
+                                    "type": "primitive",
+                                    "value": null,
+                                    "description": "Rotation around Y",
+                                    "title": "y",
+                                    "paramId": "91766603-df88-7bb6-7b72-a871706e1bd6",
+                                    "displayTitle": "y",
+                                    "unit": "rad",
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Rotation around Y",
+                                                    "translation": "Rotation um die Y-Achse"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "reference": null,
+                                    "dataType": "float",
+                                    "type": "primitive",
+                                    "value": null,
+                                    "description": "Rotation around X",
+                                    "title": "x",
+                                    "paramId": "526e425b-0a79-acb9-816b-ad71ddf5f4c6",
+                                    "displayTitle": "x",
+                                    "unit": "rad",
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Rotation around X",
+                                                    "translation": "Rotation um die X-Achse"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "constraints": [],
+                            "reference": null,
+                            "dataType": "orientation",
+                            "type": "group",
+                            "value": null,
+                            "description": "Rotation around axes in order ZYX",
+                            "title": "orientation",
+                            "paramId": "c86513ad-ab5d-bee5-d346-54d6b766db82",
+                            "displayTitle": "Orientation",
+                            "translations": [
+                                {
+                                    "language": "de",
+                                    "values": [
+                                        {
+                                            "key": "Orientation",
+                                            "translation": "Orientierung"
+                                        },
+                                        {
+                                            "key": "Rotation around axes in order ZYX",
+                                            "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "constraints": [],
+                    "reference": null,
+                    "dataType": "pose",
+                    "type": "group",
+                    "value": null,
+                    "description": null,
+                    "title": "pose",
+                    "paramId": "9587fadd-a133-791e-cfed-faec3a1ca8c2",
+                    "displayTitle": "Pose"
+                }
+            ],
+            "script": "#!/usr/bin/env python\n\nimport rospy\nfrom robot_movement_interface.msg import *\n\nsubscriber = None\nposition = None\nabort = False\n\ndef callback(data):\n\tglobal position\n\tposition = data\n\ndef execute(input_parameters, output_parameters):\n\tglobal subscriber\n\tglobal position\n\tglobal abort\n\t\n\tabort = False\n\tposition = None\n\t\n\tsubscriber = rospy.Subscriber(\"/dnb_tool_frame\", EulerFrame, callback)\n\t\n\twhile not position and not abort:\n\t\trospy.sleep(0.01)\n\t\n\toutput_parameters[0]['parameters'][0]['parameters'][0]['value'] = position.x\n\toutput_parameters[0]['parameters'][0]['parameters'][1]['value'] = position.y\n\toutput_parameters[0]['parameters'][0]['parameters'][2]['value'] = position.z\n\toutput_parameters[0]['parameters'][1]['parameters'][0]['value'] = position.alpha\n\toutput_parameters[0]['parameters'][1]['parameters'][1]['value'] = position.beta\n\toutput_parameters[0]['parameters'][1]['parameters'][2]['value'] = position.gamma\n\t\n\tsubscriber.unregister()\n\t\n\treturn output_parameters\n\ndef abort():\n\tglobal abort\n\tabort = True",
+            "title": "Get TCP Pose",
+            "description": "This FB produces the current robot TCP as output in format of a pose.",
+            "image": "dnb-icon-robot",
+            "identifier": "5bade47d2e1fa89c5de6848c",
+            "translations": [
+                {
+                    "language": "de",
+                    "values": [
+                        {
+                            "key": "Get TCP Pose",
+                            "translation": "TCP Pose auslesen"
+                        },
+                        {
+                            "key": "This FB produces the current robot TCP as output in format of a pose.",
+                            "translation": "Dieser Funktionsblock produziert die aktuelle Pose des Roboter TCP als ausgabe."
+                        }
+                    ]
+                }
+            ],
+            "dependencies": null
+        },
+        {
+            "version": "5.1.0",
+            "errorcodes": [
+                "COMMAND_FAILED",
+                "COMMAND_ERROR",
+                "COMMUNICATION_ERROR",
+                "POSE_NOT_REACHABLE",
+                "SAFETY_STOP",
+                "ROBOT_NOT_READY",
+                "COLLISION_DETECTED"
+            ],
+            "skip": false,
+            "type": "Basic",
+            "inputParameters": [
+                {
+                    "availableOptions": [],
+                    "displayTitle": "Trajectory",
+                    "parameters": [
+                        {
+                            "availableOptions": [],
+                            "displayTitle": "Waypoint",
+                            "parameters": [
+                                {
+                                    "availableOptions": [],
+                                    "displayTitle": "Pose",
+                                    "parameters": [
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Position",
+                                            "parameters": [
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "X",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "reference": null,
+                                                    "dataType": "float",
+                                                    "type": "primitive",
+                                                    "value": null,
+                                                    "description": null,
+                                                    "title": "x",
+                                                    "paramId": "a41bb16c-6020-862e-571a-e86fe105a213",
+                                                    "unit": "m"
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Y",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "reference": null,
+                                                    "dataType": "float",
+                                                    "type": "primitive",
+                                                    "value": null,
+                                                    "description": null,
+                                                    "title": "y",
+                                                    "paramId": "4afa02d9-f62a-bbf5-ad2f-6b94b4e192a7",
+                                                    "unit": "m"
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Z",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "305bab83-8af6-8035-1e5b-c4a4b0ed16c3",
+                                                    "title": "z",
+                                                    "description": null,
+                                                    "value": null,
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "m"
+                                                }
+                                            ],
+                                            "constraints": [],
+                                            "paramId": "03fe2b9b-902b-c666-7af6-242812378f67",
+                                            "title": "position",
+                                            "description": null,
+                                            "value": null,
+                                            "type": "group",
+                                            "dataType": "position",
+                                            "reference": null,
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Position",
+                                                            "translation": "Position"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Orientation",
+                                            "parameters": [
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Z",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "45edc5f2-e0c2-f825-d1d3-60b103279f76",
+                                                    "title": "z",
+                                                    "description": "Rotation around Z",
+                                                    "value": null,
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around Z",
+                                                                    "translation": "Rotation um die Z-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Y",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "91766603-df88-7bb6-7b72-a871706e1bd6",
+                                                    "title": "y",
+                                                    "description": "Rotation around Y",
+                                                    "value": null,
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around Y",
+                                                                    "translation": "Rotation um die Y-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "X",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "526e425b-0a79-acb9-816b-ad71ddf5f4c6",
+                                                    "title": "x",
+                                                    "description": "Rotation around X",
+                                                    "value": null,
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around X",
+                                                                    "translation": "Rotation um die X-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "constraints": [],
+                                            "paramId": "c86513ad-ab5d-bee5-d346-54d6b766db82",
+                                            "title": "orientation",
+                                            "description": "Rotation around axes in order ZYX",
+                                            "value": null,
+                                            "type": "group",
+                                            "dataType": "orientation",
+                                            "reference": null,
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Orientation",
+                                                            "translation": "Orientierung"
+                                                        },
+                                                        {
+                                                            "key": "Rotation around axes in order ZYX",
+                                                            "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "constraints": [],
+                                    "dataType": "pose",
+                                    "description": null,
+                                    "paramId": "9587fadd-a133-791e-cfed-faec3a1ca8c2",
+                                    "reference": null,
+                                    "title": "pose",
+                                    "type": "group",
+                                    "value": null,
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Pose",
+                                                    "translation": "Pose"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "displayTitle": "Pose Reference",
+                                    "parameters": [
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Position",
+                                            "parameters": [
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "X",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "3",
+                                                    "title": "x",
+                                                    "description": null,
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "m"
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Y",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "4",
+                                                    "title": "y",
+                                                    "description": null,
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "m"
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Z",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "5",
+                                                    "title": "z",
+                                                    "description": null,
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "m"
+                                                }
+                                            ],
+                                            "constraints": [],
+                                            "dataType": "position",
+                                            "description": null,
+                                            "paramId": "2",
+                                            "reference": null,
+                                            "title": "position",
+                                            "type": "group",
+                                            "value": null,
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Position",
+                                                            "translation": "Position"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Orientation",
+                                            "parameters": [
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Z",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "7",
+                                                    "title": "z",
+                                                    "description": "Rotation around Z",
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around Z",
+                                                                    "translation": "Rotation um die Z-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "Y",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "8",
+                                                    "title": "y",
+                                                    "description": "Rotation around Y",
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around Y",
+                                                                    "translation": "Rotation um die Y-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "availableOptions": [],
+                                                    "displayTitle": "X",
+                                                    "parameters": [],
+                                                    "constraints": [],
+                                                    "paramId": "9",
+                                                    "title": "x",
+                                                    "description": "Rotation around X",
+                                                    "value": "0",
+                                                    "type": "primitive",
+                                                    "dataType": "float",
+                                                    "reference": null,
+                                                    "unit": "rad",
+                                                    "translations": [
+                                                        {
+                                                            "language": "de",
+                                                            "values": [
+                                                                {
+                                                                    "key": "Rotation around X",
+                                                                    "translation": "Rotation um die X-Achse"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "constraints": [],
+                                            "dataType": "orientation",
+                                            "description": "Rotation around axes in order ZYX",
+                                            "paramId": "6",
+                                            "reference": null,
+                                            "title": "orientation",
+                                            "type": "group",
+                                            "value": null,
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Orientation",
+                                                            "translation": "Orientierung"
+                                                        },
+                                                        {
+                                                            "key": "Rotation around axes in order ZYX",
+                                                            "translation": "Rotation um die Achsen in der Reihenfolge ZYX"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "constraints": [],
+                                    "dataType": "pose",
+                                    "description": "If set, the waypoint's pose will be relative to this reference pose.",
+                                    "paramId": "1",
+                                    "reference": null,
+                                    "title": "pose_reference",
+                                    "type": "group",
+                                    "value": null,
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Pose Reference",
+                                                    "translation": "Referenzpose"
+                                                },
+                                                {
+                                                    "key": "If set, the waypoint's pose will be relative to this reference pose.",
+                                                    "translation": "Wenn gesetzt wird die gegebene Pose relative zur Referenzpose angefahren."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [
+                                        "LIN",
+                                        "PTP"
+                                    ],
+                                    "displayTitle": "Movement Type",
+                                    "parameters": [],
+                                    "constraints": [],
+                                    "dataType": "string",
+                                    "description": "How the robot moves. LIN: In a straight line between waypoints. PTP: Robot choses path between points, not always straight.",
+                                    "paramId": "b78a25e9-e276-528e-158f-ee3fbe87b591",
+                                    "reference": null,
+                                    "title": "movement_type",
+                                    "type": "select",
+                                    "value": "LIN",
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Movement Type",
+                                                    "translation": "Bewegungsart"
+                                                },
+                                                {
+                                                    "key": "How the robot moves. LIN: In a straight line between waypoints. PTP: Robot choses path between points, not always straight.",
+                                                    "translation": "Bestimmt die Bahn des Roboters. LIN: Gerade Linie zwischen Wegpunkten. PTP: Roboter entscheidet über den Bahn zwischen Wegpunkten, nicht immer gerade."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "displayTitle": "Speed",
+                                    "parameters": [
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Speed Value",
+                                            "parameters": [],
+                                            "constraints": [
+                                                {
+                                                    "msg": "Value should be smaller or equals 100",
+                                                    "rule": "=PERCENT?<=100",
+                                                    "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater than 0",
+                                                    "rule": "=PERCENT?>0",
+                                                    "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater than 0",
+                                                    "rule": "=M/S?>0",
+                                                    "reference": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                                    "type": "ref"
+                                                }
+                                            ],
+                                            "dataType": "float",
+                                            "description": null,
+                                            "paramId": "f2b9fd9d-574b-3cf8-508e-f4efc7ea85b8",
+                                            "reference": null,
+                                            "title": "speed_value",
+                                            "type": "primitive",
+                                            "value": "0.05",
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Speed Value",
+                                                            "translation": "Geschwindigkeit-Wert"
+                                                        },
+                                                        {
+                                                            "key": "Value should be smaller or equals 100",
+                                                            "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                        },
+                                                        {
+                                                            "key": "Value should be greater than 0",
+                                                            "translation": "Wert sollte größer als 0 sein"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "availableOptions": [
+                                                "M/S",
+                                                "PERCENT"
+                                            ],
+                                            "displayTitle": "Speed Type",
+                                            "parameters": [],
+                                            "constraints": [
+                                                {
+                                                    "msg": "PTP requires speed in PERCENT",
+                                                    "rule": "=PTP?=PERCENT",
+                                                    "reference": "b78a25e9-e276-528e-158f-ee3fbe87b591",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "LIN requires speed in M/S",
+                                                    "rule": "=LIN?=M/S",
+                                                    "reference": "b78a25e9-e276-528e-158f-ee3fbe87b591",
+                                                    "type": "ref"
+                                                }
+                                            ],
+                                            "dataType": "string",
+                                            "description": null,
+                                            "paramId": "cbec2d14-95b9-8c1f-a610-9fb2918db9e9",
+                                            "reference": null,
+                                            "title": "speed_type",
+                                            "value": "M/S",
+                                            "type": "select",
+                                            "translations": [
+                                                {
+                                                    "language": "en",
+                                                    "values": [
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Speed Type",
+                                                            "translation": "Geschwindigkeitsart"
+                                                        },
+                                                        {
+                                                            "key": "PTP requires speed in PERCENT",
+                                                            "translation": "PTP benötigt Geschwindigkeit in %"
+                                                        },
+                                                        {
+                                                            "key": "LIN requires speed in M/S",
+                                                            "translation": "LIN benötigt Geschwindigkeit in M/S"
+                                                        },
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "constraints": [],
+                                    "dataType": "speed",
+                                    "description": "Speed of robot movement",
+                                    "paramId": "3b921203-b484-4c53-9ac9-938380683e3b",
+                                    "reference": null,
+                                    "title": "speed",
+                                    "type": "unitval",
+                                    "value": null,
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Speed",
+                                                    "translation": "Geschwindigkeit"
+                                                },
+                                                {
+                                                    "key": "Speed of robot movement",
+                                                    "translation": "Geschwindigkeit der Roboterbewegung"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "displayTitle": "Acceleration",
+                                    "parameters": [
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Acceleration Value",
+                                            "parameters": [],
+                                            "constraints": [
+                                                {
+                                                    "msg": "Value should be smaller or equals 100",
+                                                    "rule": "=PERCENT?<=100",
+                                                    "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater than 0",
+                                                    "rule": "=PERCENT?>0",
+                                                    "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater than 0",
+                                                    "rule": "=M/S^2?>0",
+                                                    "reference": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                                    "type": "ref"
+                                                }
+                                            ],
+                                            "dataType": "float",
+                                            "description": null,
+                                            "paramId": "fdd36c64-cb08-e559-00e9-c858ebbf365b",
+                                            "reference": null,
+                                            "title": "acceleration_value",
+                                            "type": "primitive",
+                                            "value": "50.0",
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Acceleration Value",
+                                                            "translation": "Beschleunigung-Wert"
+                                                        },
+                                                        {
+                                                            "key": "Value should be smaller or equals 100",
+                                                            "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                        },
+                                                        {
+                                                            "key": "Value should be greater than 0",
+                                                            "translation": "Wert sollte größer als 0 sein"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "availableOptions": [
+                                                "PERCENT",
+                                                "M/S^2"
+                                            ],
+                                            "displayTitle": "Acceleration Type",
+                                            "parameters": [],
+                                            "constraints": [],
+                                            "dataType": "string",
+                                            "description": null,
+                                            "paramId": "28c90322-37b0-621e-8e02-3bc720cd46fc",
+                                            "reference": null,
+                                            "title": "acceleration_type",
+                                            "type": "select",
+                                            "value": "PERCENT",
+                                            "translations": [
+                                                {
+                                                    "language": "en",
+                                                    "values": [
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Acceleration Type",
+                                                            "translation": "Beschleunigungsart"
+                                                        },
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "constraints": [],
+                                    "dataType": "acceleration",
+                                    "description": "Acceleration of robot movement",
+                                    "paramId": "f8dcafdf-a10b-4b38-84a4-8b470246cc0c",
+                                    "reference": null,
+                                    "title": "acceleration",
+                                    "type": "unitval",
+                                    "value": null,
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Acceleration",
+                                                    "translation": "Beschleunigung"
+                                                },
+                                                {
+                                                    "key": "Acceleration of robot movement",
+                                                    "translation": "Beschleunigung der Roboterbewegung"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "availableOptions": [],
+                                    "displayTitle": "Blending",
+                                    "parameters": [
+                                        {
+                                            "availableOptions": [],
+                                            "displayTitle": "Blending Value",
+                                            "parameters": [],
+                                            "constraints": [
+                                                {
+                                                    "msg": "Value should be smaller or equals 100",
+                                                    "rule": "=PERCENT?<=100",
+                                                    "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater or equals 0",
+                                                    "rule": "=PERCENT?>=0",
+                                                    "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                    "type": "ref"
+                                                },
+                                                {
+                                                    "msg": "Value should be greater or equals 0",
+                                                    "rule": "=M?>=0",
+                                                    "reference": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                                    "type": "ref"
+                                                }
+                                            ],
+                                            "dataType": "float",
+                                            "description": null,
+                                            "paramId": "c45799ae-734e-4a13-ee0d-d8ae4312fb9d",
+                                            "reference": null,
+                                            "title": "blending_value",
+                                            "type": "primitive",
+                                            "value": "0.0",
+                                            "translations": [
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Blending Value",
+                                                            "translation": "Überschleifen-Wert"
+                                                        },
+                                                        {
+                                                            "key": "Value should be smaller or equals 100",
+                                                            "translation": "Wert sollte kleiner oder gleich 100 sein"
+                                                        },
+                                                        {
+                                                            "key": "Value should be greater or equals 0",
+                                                            "translation": "Wert sollte größer oder gleich 0 sein"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "availableOptions": [
+                                                "PERCENT",
+                                                "M"
+                                            ],
+                                            "displayTitle": "Blending Type",
+                                            "parameters": [],
+                                            "constraints": [],
+                                            "dataType": "string",
+                                            "description": null,
+                                            "paramId": "b7e0bd98-f23b-403d-aee3-09e1f318b582",
+                                            "reference": null,
+                                            "title": "blending_type",
+                                            "type": "select",
+                                            "value": "PERCENT",
+                                            "translations": [
+                                                {
+                                                    "language": "en",
+                                                    "values": [
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "language": "de",
+                                                    "values": [
+                                                        {
+                                                            "key": "Blending Type",
+                                                            "translation": "Überschleifen-Art"
+                                                        },
+                                                        {
+                                                            "key": "PERCENT",
+                                                            "translation": "%"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "constraints": [],
+                                    "dataType": "blending",
+                                    "description": "Positional blending between waypoint poses",
+                                    "paramId": "498bc753-9132-0f4e-6d67-44d2d21fd52e",
+                                    "reference": null,
+                                    "title": "blending",
+                                    "type": "unitval",
+                                    "value": null,
+                                    "translations": [
+                                        {
+                                            "language": "de",
+                                            "values": [
+                                                {
+                                                    "key": "Blending",
+                                                    "translation": "Überschleifen"
+                                                },
+                                                {
+                                                    "key": "Positional blending between waypoint poses",
+                                                    "translation": "Überschleifen zwischen einzelnen Wegpunkten"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "constraints": [],
+                            "dataType": "waypoint_2",
+                            "description": null,
+                            "paramId": "02e3f31c-24f4-482f-43be-f27161404d24",
+                            "reference": null,
+                            "title": "new_param",
+                            "type": "group",
+                            "value": null,
+                            "translations": [
+                                {
+                                    "language": "de",
+                                    "values": [
+                                        {
+                                            "key": "Waypoint",
+                                            "translation": "Wegpunkt"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "constraints": [],
+                    "dataType": "trajectory",
+                    "description": "List of waypoints the robot will move to.",
+                    "paramId": "CzkN-64-1497278216110-KGYD",
+                    "reference": null,
+                    "title": "trajectory",
+                    "type": "list",
+                    "value": null,
+                    "translations": [
+                        {
+                            "language": "de",
+                            "values": [
+                                {
+                                    "key": "Trajectory",
+                                    "translation": "Trajektorie"
+                                },
+                                {
+                                    "key": "List of waypoints the robot will move to.",
+                                    "translation": "Liste der anzufahrenden Wegpunkte."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "availableOptions": [],
+                    "paramId": "c1121400-db2d-4dbb-a6a5-320bc0c4cb1f",
+                    "displayTitle": "Add to Waypoint Queue",
+                    "title": "add_to_waypoint_queue",
+                    "description": "When enabled the robot does not move when this function block is executed. Movement is suspended and its execution needs to be triggered by the function block 'Wayoint Queue - Move'. This enables chaining movements for shorter cycle times.",
+                    "value": "false",
+                    "type": "primitive",
+                    "parameters": [],
+                    "dataType": "boolean",
+                    "reference": null,
+                    "constraints": [],
+                    "translations": [
+                        {
+                            "language": "de",
+                            "values": [
+                                {
+                                    "key": "Add to Waypoint Queue",
+                                    "translation": "Zur Wegpunkt-Warteschlange hinzufügen"
+                                },
+                                {
+                                    "key": "When enabled the robot does not move when this function block is executed. Movement is suspended and its execution needs to be triggered by the function block 'Wayoint Queue - Move'. This enables chaining movements for shorter cycle times.",
+                                    "translation": "Wenn aktiviert wird die Bewegung des Roboters nicht bei der Ausführung diese Funktionsblockes durchgeführt. Die Bewegung wird ausgesetzt und muss durch den Funktionsblock 'Wegpunkt-Warteschlange - Bewegen' gestartet werden. Das ermöglich die Verkettung mehrerer Bewegungn zur Taktzeitoptimierung."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "globalParameters": [],
+            "outputParameters": [],
+            "script": "#!/usr/bin/env python\nimport rospy\nimport sys\nimport yaml\nimport json\nimport actionlib\nimport unicodedata\nimport random\nimport sys\n\nfrom std_srvs.srv import *\nfrom robot_movement_interface.msg import *\n\n# Returns str including non-ascii characters\ndef safe_string(s):\n\tif (sys.version_info > (3, 0)):\n\t\treturn s\n\telse:\t\t\n\t\treturn s.encode(\"utf-8\") if isinstance(s, unicode) else s\n\nclass ActionManager(object):\n\tdebug = False\n\tdef __init__(self, action_name, action_type):\n\t\tif self.debug: print(\"ActionManager - Initializing\")\n\t\tself.client = actionlib.SimpleActionClient(action_name, action_type)\n\t\tself.client.wait_for_server()\n\t\tif self.debug: print(\"ActionManager - Initialized\")\n\t\t\n\tdef __del__(self):\n\t\tif self.debug: print(\"ActionManager - Destructor called\")\n\t\tself.cleaner(self.client)\n\t\tif self.debug: print(\"ActionManager - Destructor finished\")\n\t\t\n\tdef cleaner(self, client):\n\t\tif self.debug: print(\"ActionManager - Cleaner called\")\n\t\tif not client: return\n\t\tclient.action_client.status_sub.unregister()\n\t\tclient.action_client.result_sub.unregister()\n\t\tclient.action_client.feedback_sub.unregister()\n\t\tdel client.action_client.status_sub\n\t\tdel client.action_client.result_sub\n\t\tdel client.action_client.feedback_sub\n\t\tdel client.action_client.pub_goal\n\t\tdel client.action_client.pub_cancel\n\t\tdel client\n\t\tif self.debug: print(\"ActionManager - Cleaner finished\")\n\t\t\n\t# This functions does a blocking call to the action, waiting until any result (also cancellation) is received\n\t# It returns the result message received\n\tdef call(self, goal):\n\t\tif self.debug: print(\"ActionManager - Call called\")\n\t\tself.client.send_goal(goal)\n\t\tself.client.wait_for_result()\n\t\tif self.debug: print(\"ActionManager - Call finished with result:\")\n\t\tif self.debug: print(self.client.get_result())\n\t\treturn self.client.get_result()\n\t# This function \n\tdef abort(self): \n\t\tif self.debug: print(\"ActionManager - Abort called\")\n\t\tself.client.cancel_all_goals()\n\t\tself.client.wait_for_result()\n\t\tif self.debug: print(\"ActionManager - Aborted\")\n\t\t\nmove_manager = ActionManager('commands_action_server', robot_movement_interface.msg.CommandsAction)\naborted = False\n\ndef execute(input_parameters, output_parameters, global_parameters, rmi_queue):\n\tglobal aborted\n\taborted = False\n\t\n\tcommand_action_goal = robot_movement_interface.msg.CommandsGoal()\n\tcommand_list = CommandList()\n\tcommand_list.commands = []\n\tcommand_list.replace_previous_commands = True\n\tcommand_id = random.randint(0,2047483647)\n\n\t# Create a ROS action call message with the incoming information\n\tfor waypoint in input_parameters[0]['parameters']:\n\t\tall_params = dict((y['title'], y) for y in waypoint['parameters'])\n\n\t\t# target pose\n\t\tpose_target = dict((y['title'], y) for y in all_params['pose']['parameters'])\n\t\tpose_target_position = dict((y['title'], y) for y in pose_target['position']['parameters'])\n\t\tpose_target_orientation = dict((y['title'], y) for y in pose_target['orientation']['parameters'])\n\t\t\n\t\t# check if the coordinate values are valid (can be None in some cornercases)\n\t\tif (pose_target_position['x']['value'] == None or pose_target_position['y']['value'] == None or pose_target_position['z']['value'] == None):\n\t\t\trospy.logwarn(\"Move Cartesian: Invalid position: x=\" + str(pose_target_position['x']['value']) + \" y=\" + str(pose_target_position['y']['value']) + \" z=\" + str(pose_target_position['z']['value']))\n\t\t\traise Exception(\"COMMAND_FAILED\")\n\t\t\n\t\tif (pose_target_orientation['x']['value'] == None or pose_target_orientation['y']['value'] == None or pose_target_orientation['z']['value'] == None):\n\t\t\trospy.logwarn(\"Move Cartesian: Invalid orientation: x=\" + str(pose_target_position['x']['value']) + \" y=\" + str(pose_target_position['y']['value']) + \" z=\" + str(pose_target_position['z']['value']))\n\t\t\traise Exception(\"COMMAND_FAILED\")\n\n\t\t# the reference system\n\t\tpose_ref = dict((y['title'], y) for y in all_params['pose_reference']['parameters'])\n\t\tpose_ref_position = dict((y['title'], y) for y in pose_ref['position']['parameters'])\n\t\tpose_ref_orientation = dict((y['title'], y) for y in pose_ref['orientation']['parameters'])\n\n\t\t# the movement parameters\n\t\tspeed = dict((y['title'], y) for y in all_params['speed']['parameters'])\n\t\tacceleration = dict((y['title'], y) for y in all_params['acceleration']['parameters'])\n\t\tblending = dict((y['title'], y) for y in all_params['blending']['parameters'])\n\n\t\t# create the reference and prefill\n\t\tref = EulerFrame()\n\t\tref.x = float(pose_ref_position['x']['value'])\n\t\tref.y = float(pose_ref_position['y']['value'])\n\t\tref.z = float(pose_ref_position['z']['value'])\n\t\t# alpha, beta, gamma is essentially rz, ry, rx\n\t\tref.alpha = float(pose_ref_orientation['z']['value'])\n\t\tref.beta =  float(pose_ref_orientation['y']['value'])\n\t\tref.gamma = float(pose_ref_orientation['x']['value'])\n\n\t\tcommand = Command()\n\t\tcommand.command_id = command_id\n\t\tcommand.pose_reference_frame = ref\n\t\tcommand.command_type = safe_string(all_params['movement_type']['value'])\n\t\tcommand.pose_type = 'EULER_INTRINSIC_ZYX'\n\t\tcommand.pose = [float(pose_target_position['x']['value']),\n\t\t\t\t\t\tfloat(pose_target_position['y']['value']),\n\t\t\t\t\t\tfloat(pose_target_position['z']['value']),\n\t\t\t\t\t\tfloat(pose_target_orientation['z']['value']),\n\t\t\t\t\t\tfloat(pose_target_orientation['y']['value']),\n\t\t\t\t\t\tfloat(pose_target_orientation['x']['value'])]\n\t\tcommand.velocity_type = speed['speed_type']['value']\n\t\tcommand.velocity = [float(speed['speed_value']['value'])]\n\t\tcommand.blending_type = blending['blending_type']['value']\n\t\tcommand.blending = [float(blending['blending_value']['value'])]\n\t\tcommand.acceleration_type = acceleration['acceleration_type']['value']\n\t\tcommand.acceleration = [float(acceleration['acceleration_value']['value'])]\n\t\t#command.pose_reference = all_params['pose_reference']['value']\n\t\tcommand.pose_reference = 'world'\n\n\t\tcommand_list.commands.append(command)\n\t\tcommand_id += 1\n\n\tif (str(input_parameters[1]['value']).lower() == 'false'):\n\t\tcommand_action_goal.commands = command_list\n\t\tresult_msg = move_manager.call(command_action_goal)\n\t\n\t\tif not aborted and not result_msg:\n\t\t\traise Exception(\"COMMAND_FAILED\")\n\t\tif not aborted and result_msg and result_msg.result.result_code != Result.SUCCESS:\n\t\t\tif result_msg.result.result_code == Result.FAILURE_COMMUNICATION:\n\t\t\t\traise Exception(\"COMMUNICATION_ERROR\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_TARGET_NOT_REACHABLE:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_OUT_OF_REACH:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_ROBOT_CONFIGURATION:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_JOINT_LIMIT:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_CROSSING_SINGULARITY:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_EMERGENCY_STOP:\n\t\t\t\traise Exception(\"SAFETY_STOP\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_COMPONENT_NOT_READY:\n\t\t\t\traise Exception(\"ROBOT_NOT_READY\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_POSSIBLE_COLLISION:\n\t\t\t\traise Exception(\"COLLISION_DETECTED\")\n\t\t\telif result_msg.result.result_code == Result.FAILURE_IK:\n\t\t\t\traise Exception(\"POSE_NOT_REACHABLE\")\n\t\t\telse:\n\t\t\t\traise Exception(\"COMMAND_ERROR\")\n\telse: \n\t\t# MOVE is asynchronous, put all commands of the current trajectory\n\t\tfor c in command_list.commands:\n\t\t\trmi_queue.put_nowait(c)\n\t\t\n\treturn output_parameters\n\ndef abort():\n\tglobal aborted\n\taborted = True\n\t\n\trospy.loginfo(\"Handling abort()-Section in move skill.\")\t\n\n\tmove_manager.abort()\n\tstop_service = rospy.ServiceProxy('stop_robot_right_now', Trigger)\n\tstop_service()",
+            "title": "Move Cartesian",
+            "description": "Move the robot along a list of waypoints (trajectory). Waypoints can be defined absolute or relative.",
+            "image": "dnb-icon-move_cartesian",
+            "identifier": "5a8ec43a2e41150001bd047a",
+            "translations": [
+                {
+                    "language": "de",
+                    "values": [
+                        {
+                            "key": "Move Cartesian",
+                            "translation": "Kartesische Bewegung"
+                        },
+                        {
+                            "key": "Move the robot along a list of waypoints (trajectory). Waypoints can be defined absolute or relative.",
+                            "translation": "Bewegt den Roboter entlang einer Wegpunktliste (Trajektorie). Wegpunkte können absolut oder relativ definiert werden."
+                        }
+                    ]
+                }
+            ],
+            "dependencies": null
+        }
+    ],
+    "format": "linked#2.4.0"
+}

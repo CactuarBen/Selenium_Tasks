@@ -1,0 +1,21 @@
+from Utility import Util
+from selenium.webdriver.common.by import By
+import time
+
+
+def test_1():
+    Util.init()
+    Util.navigateTo("http://the-internet.herokuapp.com/")
+    assert Util.getTitle() == "The Internet"
+
+def test_2():
+    Util.clickElement(By.LINK_TEXT, "Checkboxes")
+    print(Util.getAttribute(By.XPATH, "//h3[text()='Checkboxes']", "Text"))
+    print(Util.getAttribute(By.XPATH, "//input[@type='checkbox'][1]", "Selected"))
+    print(Util.getAttribute(By.XPATH, "//input[@type='checkbox'][2]", "Selected"))
+    Util.driver.back()
+    Util.clickElement(By.LINK_TEXT, "File Upload")
+    print(Util.getAttribute(By.XPATH, "//h3[text()='File Uploader']", "Text"))
+    Util.sendKeys(By.ID, "file-upload", __file__)
+    Util.clickElement(By.ID, "file-submit")
+    time.sleep(5)
